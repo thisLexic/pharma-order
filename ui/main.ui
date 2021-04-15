@@ -20,13 +20,13 @@
       <property name="currentIndex">
        <number>1</number>
       </property>
-      <widget class="QWidget" name="tab">
+      <widget class="QWidget" name="order_tab">
        <attribute name="title">
         <string>Order</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_8">
         <item row="0" column="0">
-         <widget class="QFrame" name="frame">
+         <widget class="QFrame" name="order_frame">
           <property name="frameShape">
            <enum>QFrame::StyledPanel</enum>
           </property>
@@ -35,7 +35,7 @@
           </property>
           <layout class="QGridLayout" name="gridLayout_7">
            <item row="0" column="0">
-            <widget class="QFrame" name="frame_2">
+            <widget class="QFrame" name="order_form_frame">
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
              </property>
@@ -44,7 +44,7 @@
              </property>
              <layout class="QGridLayout" name="gridLayout_6">
               <item row="0" column="0">
-               <widget class="QFrame" name="frame_5">
+               <widget class="QFrame" name="order_form_nonvolatile_frame">
                 <property name="frameShape">
                  <enum>QFrame::StyledPanel</enum>
                 </property>
@@ -53,16 +53,16 @@
                 </property>
                 <layout class="QGridLayout" name="gridLayout_2">
                  <item row="1" column="0">
-                  <layout class="QHBoxLayout" name="horizontalLayout_9">
+                  <layout class="QHBoxLayout" name="container_sold_first">
                    <item>
-                    <widget class="QLabel" name="label_11">
+                    <widget class="QLabel" name="label_sold_first">
                      <property name="text">
                       <string>Sold First</string>
                      </property>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QDateEdit" name="dateEdit_4">
+                    <widget class="QDateEdit" name="value_sold_first">
                      <property name="calendarPopup">
                       <bool>true</bool>
                      </property>
@@ -71,16 +71,16 @@
                   </layout>
                  </item>
                  <item row="2" column="0">
-                  <layout class="QHBoxLayout" name="horizontalLayout_7">
+                  <layout class="QHBoxLayout" name="container_sold_last">
                    <item>
-                    <widget class="QLabel" name="label_9">
+                    <widget class="QLabel" name="label_sold_last">
                      <property name="text">
                       <string>Sold Last</string>
                      </property>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QDateEdit" name="dateEdit_2">
+                    <widget class="QDateEdit" name="value_sold_last">
                      <property name="calendarPopup">
                       <bool>true</bool>
                      </property>
@@ -89,16 +89,16 @@
                   </layout>
                  </item>
                  <item row="3" column="0">
-                  <layout class="QHBoxLayout" name="horizontalLayout_10">
+                  <layout class="QHBoxLayout" name="container_inv_date">
                    <item>
-                    <widget class="QLabel" name="label_12">
+                    <widget class="QLabel" name="label_inv_date">
                      <property name="text">
                       <string>Inv Date</string>
                      </property>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QDateEdit" name="dateEdit_5">
+                    <widget class="QDateEdit" name="value_inv_date">
                      <property name="calendarPopup">
                       <bool>true</bool>
                      </property>
@@ -107,16 +107,16 @@
                   </layout>
                  </item>
                  <item row="0" column="0">
-                  <layout class="QHBoxLayout" name="horizontalLayout_11">
+                  <layout class="QHBoxLayout" name="container_today">
                    <item>
-                    <widget class="QLabel" name="label_13">
+                    <widget class="QLabel" name="label_today">
                      <property name="text">
                       <string>Today</string>
                      </property>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QDateEdit" name="dateEdit_6">
+                    <widget class="QDateEdit" name="value_today">
                      <property name="calendarPopup">
                       <bool>true</bool>
                      </property>
@@ -128,7 +128,7 @@
                </widget>
               </item>
               <item row="1" column="0">
-               <widget class="QFrame" name="frame_6">
+               <widget class="QFrame" name="order_form_volatile_frame">
                 <property name="frameShape">
                  <enum>QFrame::StyledPanel</enum>
                 </property>
@@ -137,16 +137,16 @@
                 </property>
                 <layout class="QGridLayout" name="gridLayout_5">
                  <item row="0" column="0">
-                  <layout class="QHBoxLayout" name="horizontalLayout">
+                  <layout class="QHBoxLayout" name="container_search">
                    <item>
-                    <widget class="QLabel" name="label_2">
+                    <widget class="QLabel" name="label_search">
                      <property name="text">
                       <string>Search</string>
                      </property>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QLineEdit" name="lineEdit_2">
+                    <widget class="QLineEdit" name="value_search">
                      <property name="placeholderText">
                       <string/>
                      </property>
@@ -155,16 +155,16 @@
                   </layout>
                  </item>
                  <item row="1" column="0">
-                  <layout class="QHBoxLayout" name="horizontalLayout_2">
+                  <layout class="QHBoxLayout" name="container_code_order">
                    <item>
-                    <widget class="QLabel" name="label_3">
+                    <widget class="QLabel" name="label_code_order">
                      <property name="text">
                       <string>Code   </string>
                      </property>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QLineEdit" name="lineEdit_3">
+                    <widget class="QLineEdit" name="value_code_order">
                      <property name="placeholderText">
                       <string/>
                      </property>
@@ -173,16 +173,16 @@
                   </layout>
                  </item>
                  <item row="2" column="0">
-                  <layout class="QHBoxLayout" name="horizontalLayout_5">
+                  <layout class="QHBoxLayout" name="container_sold_count">
                    <item>
-                    <widget class="QLabel" name="label_6">
+                    <widget class="QLabel" name="label_sold_count">
                      <property name="text">
                       <string>Sold #</string>
                      </property>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QLineEdit" name="lineEdit_6">
+                    <widget class="QLineEdit" name="value_sold_count">
                      <property name="placeholderText">
                       <string/>
                      </property>
@@ -191,16 +191,16 @@
                   </layout>
                  </item>
                  <item row="3" column="0">
-                  <layout class="QHBoxLayout" name="horizontalLayout_4">
+                  <layout class="QHBoxLayout" name="container_inv_count">
                    <item>
-                    <widget class="QLabel" name="label_5">
+                    <widget class="QLabel" name="label_inv_count">
                      <property name="text">
                       <string>Inv #</string>
                      </property>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QLineEdit" name="lineEdit_5">
+                    <widget class="QLineEdit" name="value_inv_count">
                      <property name="placeholderText">
                       <string/>
                      </property>
@@ -209,16 +209,16 @@
                   </layout>
                  </item>
                  <item row="4" column="0">
-                  <layout class="QHBoxLayout" name="horizontalLayout_3">
+                  <layout class="QHBoxLayout" name="container_oldest_stock">
                    <item>
-                    <widget class="QLabel" name="label_8">
+                    <widget class="QLabel" name="label_oldest_stock">
                      <property name="text">
                       <string>Oldest Stock</string>
                      </property>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QDateEdit" name="dateEdit">
+                    <widget class="QDateEdit" name="value_oldest_stock">
                      <property name="calendarPopup">
                       <bool>true</bool>
                      </property>
@@ -227,7 +227,7 @@
                   </layout>
                  </item>
                  <item row="5" column="0">
-                  <widget class="Line" name="line_2">
+                  <widget class="Line" name="line_planned_order_count">
                    <property name="palette">
                     <palette>
                      <active>
@@ -676,23 +676,16 @@
                   </widget>
                  </item>
                  <item row="6" column="0">
-                  <layout class="QHBoxLayout" name="horizontalLayout_6">
+                  <layout class="QHBoxLayout" name="container_planned_order_count">
                    <item>
-                    <widget class="Line" name="line">
-                     <property name="orientation">
-                      <enum>Qt::Horizontal</enum>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QLabel" name="label_7">
+                    <widget class="QLabel" name="label_planned_order_count">
                      <property name="text">
                       <string>Planned Order Count</string>
                      </property>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QLineEdit" name="lineEdit_7">
+                    <widget class="QLineEdit" name="value_planned_order_count">
                      <property name="placeholderText">
                       <string/>
                      </property>
@@ -707,7 +700,7 @@
             </widget>
            </item>
            <item row="0" column="1">
-            <widget class="QFrame" name="frame_3">
+            <widget class="QFrame" name="order_label_frame">
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
              </property>
@@ -716,16 +709,16 @@
              </property>
              <layout class="QGridLayout" name="gridLayout_4">
               <item row="4" column="0">
-               <layout class="QHBoxLayout" name="horizontalLayout_17">
+               <layout class="QHBoxLayout" name="container_type_order">
                 <item>
-                 <widget class="QLabel" name="label_22">
+                 <widget class="QLabel" name="label_type_order">
                   <property name="text">
                    <string>Type</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_23">
+                 <widget class="QLabel" name="value_type_order">
                   <property name="text">
                    <string>TypeValue</string>
                   </property>
@@ -734,16 +727,16 @@
                </layout>
               </item>
               <item row="6" column="0">
-               <layout class="QHBoxLayout" name="horizontalLayout_18">
+               <layout class="QHBoxLayout" name="container_cost_order">
                 <item>
-                 <widget class="QLabel" name="label_24">
+                 <widget class="QLabel" name="label_cost_order">
                   <property name="text">
                    <string>Cost</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_25">
+                 <widget class="QLabel" name="value_cost_order">
                   <property name="text">
                    <string>CostValue</string>
                   </property>
@@ -752,16 +745,16 @@
                </layout>
               </item>
               <item row="3" column="0">
-               <layout class="QHBoxLayout" name="horizontalLayout_15">
+               <layout class="QHBoxLayout" name="container_class_order">
                 <item>
-                 <widget class="QLabel" name="label_18">
+                 <widget class="QLabel" name="label_class_order">
                   <property name="text">
                    <string>Class</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_19">
+                 <widget class="QLabel" name="value_class_order">
                   <property name="text">
                    <string>ClassValue</string>
                   </property>
@@ -770,16 +763,16 @@
                </layout>
               </item>
               <item row="5" column="0">
-               <layout class="QHBoxLayout" name="horizontalLayout_16">
+               <layout class="QHBoxLayout" name="container_price_order">
                 <item>
-                 <widget class="QLabel" name="label_20">
+                 <widget class="QLabel" name="label_price_order">
                   <property name="text">
                    <string>Price</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_21">
+                 <widget class="QLabel" name="value_price_order">
                   <property name="text">
                    <string>Price Value</string>
                   </property>
@@ -788,16 +781,16 @@
                </layout>
               </item>
               <item row="2" column="0">
-               <layout class="QHBoxLayout" name="horizontalLayout_14">
+               <layout class="QHBoxLayout" name="container_size_order">
                 <item>
-                 <widget class="QLabel" name="label_16">
+                 <widget class="QLabel" name="label_size_order">
                   <property name="text">
                    <string>Size</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_17">
+                 <widget class="QLabel" name="value_size_order">
                   <property name="text">
                    <string>SizeValue</string>
                   </property>
@@ -806,16 +799,16 @@
                </layout>
               </item>
               <item row="10" column="0">
-               <layout class="QHBoxLayout" name="horizontalLayout_22">
+               <layout class="QHBoxLayout" name="container_recommnded_order_count">
                 <item>
-                 <widget class="QLabel" name="label_32">
+                 <widget class="QLabel" name="label_recommnded_order_count">
                   <property name="text">
                    <string>Recommended Order Count</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_33">
+                 <widget class="QLabel" name="value_recommnded_order_count">
                   <property name="text">
                    <string>Value</string>
                   </property>
@@ -824,16 +817,16 @@
                </layout>
               </item>
               <item row="1" column="0">
-               <layout class="QHBoxLayout" name="horizontalLayout_13">
+               <layout class="QHBoxLayout" name="container_generic_order">
                 <item>
-                 <widget class="QLabel" name="label_14">
+                 <widget class="QLabel" name="label_generic_order">
                   <property name="text">
                    <string>Generic</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_15">
+                 <widget class="QLabel" name="value_generic_order">
                   <property name="text">
                    <string>Generic Value</string>
                   </property>
@@ -842,7 +835,7 @@
                </layout>
               </item>
               <item row="11" column="0">
-               <widget class="Line" name="line_3">
+               <widget class="Line" name="line_total">
                 <property name="palette">
                  <palette>
                   <active>
@@ -1291,16 +1284,16 @@
                </widget>
               </item>
               <item row="7" column="0">
-               <layout class="QHBoxLayout" name="horizontalLayout_19">
+               <layout class="QHBoxLayout" name="container_ave_per_month">
                 <item>
-                 <widget class="QLabel" name="label_26">
+                 <widget class="QLabel" name="label_ave_per_month">
                   <property name="text">
                    <string>Ave/Month</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_27">
+                 <widget class="QLabel" name="value_ave_per_month">
                   <property name="text">
                    <string>Ave/Month Value</string>
                   </property>
@@ -1309,23 +1302,23 @@
                </layout>
               </item>
               <item row="12" column="0">
-               <layout class="QHBoxLayout" name="horizontalLayout_23">
+               <layout class="QHBoxLayout" name="container_total">
                 <item>
-                 <widget class="QLabel" name="label_34">
+                 <widget class="QLabel" name="label_total_order">
                   <property name="text">
                    <string>Total</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_35">
+                 <widget class="QLabel" name="value_total_order">
                   <property name="text">
                    <string>Value</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="pushButton">
+                 <widget class="QPushButton" name="button_add_order">
                   <property name="text">
                    <string>Add</string>
                   </property>
@@ -1334,16 +1327,16 @@
                </layout>
               </item>
               <item row="8" column="0">
-               <layout class="QHBoxLayout" name="horizontalLayout_20">
+               <layout class="QHBoxLayout" name="container_high_order">
                 <item>
-                 <widget class="QLabel" name="label_28">
+                 <widget class="QLabel" name="label_high_order">
                   <property name="text">
                    <string>High</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_29">
+                 <widget class="QLabel" name="value_high_order">
                   <property name="text">
                    <string>High Value</string>
                   </property>
@@ -1352,16 +1345,16 @@
                </layout>
               </item>
               <item row="9" column="0">
-               <layout class="QHBoxLayout" name="horizontalLayout_21">
+               <layout class="QHBoxLayout" name="container_low_order">
                 <item>
-                 <widget class="QLabel" name="label_30">
+                 <widget class="QLabel" name="label_low_order">
                   <property name="text">
                    <string>Low</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_31">
+                 <widget class="QLabel" name="value_low_order">
                   <property name="text">
                    <string>Low Value</string>
                   </property>
@@ -1370,16 +1363,16 @@
                </layout>
               </item>
               <item row="0" column="0">
-               <layout class="QHBoxLayout" name="horizontalLayout_12">
+               <layout class="QHBoxLayout" name="container_brand_order">
                 <item>
-                 <widget class="QLabel" name="label">
+                 <widget class="QLabel" name="label_brand_order">
                   <property name="text">
                    <string>Brand</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_4">
+                 <widget class="QLabel" name="value_brand_order">
                   <property name="text">
                    <string>Brand Value</string>
                   </property>
@@ -1391,7 +1384,7 @@
             </widget>
            </item>
            <item row="1" column="0" colspan="2">
-            <widget class="QFrame" name="frame_4">
+            <widget class="QFrame" name="order_table_frame">
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
              </property>
@@ -1400,7 +1393,7 @@
              </property>
              <layout class="QGridLayout" name="gridLayout_3">
               <item row="0" column="0" colspan="3">
-               <widget class="QTableWidget" name="tableWidget">
+               <widget class="QTableWidget" name="order_table">
                 <property name="editTriggers">
                  <set>QAbstractItemView::NoEditTriggers</set>
                 </property>
@@ -1562,14 +1555,14 @@
                </widget>
               </item>
               <item row="1" column="0">
-               <widget class="QPushButton" name="pushButton_3">
+               <widget class="QPushButton" name="button_edit_order">
                 <property name="text">
                  <string>Edit</string>
                 </property>
                </widget>
               </item>
               <item row="1" column="1">
-               <spacer name="horizontalSpacer">
+               <spacer name="order_table_spacer">
                 <property name="orientation">
                  <enum>Qt::Horizontal</enum>
                 </property>
@@ -1582,7 +1575,7 @@
                </spacer>
               </item>
               <item row="1" column="2">
-               <widget class="QPushButton" name="pushButton_2">
+               <widget class="QPushButton" name="button_save_order">
                 <property name="text">
                  <string>Save Orders</string>
                 </property>
@@ -1596,13 +1589,13 @@
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="tab_2">
+      <widget class="QWidget" name="product_tab">
        <attribute name="title">
         <string>Product</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_16">
         <item row="0" column="0">
-         <widget class="QFrame" name="frame_7">
+         <widget class="QFrame" name="product_frame">
           <property name="frameShape">
            <enum>QFrame::StyledPanel</enum>
           </property>
@@ -1611,7 +1604,7 @@
           </property>
           <layout class="QGridLayout" name="gridLayout_12">
            <item row="0" column="0">
-            <widget class="QFrame" name="frame_10">
+            <widget class="QFrame" name="product_left_frame">
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
              </property>
@@ -1620,16 +1613,16 @@
              </property>
              <layout class="QGridLayout" name="gridLayout_9">
               <item row="0" column="0">
-               <layout class="QHBoxLayout" name="horizontalLayout_27">
+               <layout class="QHBoxLayout" name="container_brand_product">
                 <item>
-                 <widget class="QLabel" name="label_39">
+                 <widget class="QLabel" name="label_brand_product">
                   <property name="text">
                    <string>Brand</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLineEdit" name="lineEdit_4">
+                 <widget class="QLineEdit" name="value_brand_product">
                   <property name="placeholderText">
                    <string/>
                   </property>
@@ -1638,16 +1631,16 @@
                </layout>
               </item>
               <item row="1" column="0">
-               <layout class="QHBoxLayout" name="horizontalLayout_34">
+               <layout class="QHBoxLayout" name="container_code_product">
                 <item>
-                 <widget class="QLabel" name="label_46">
+                 <widget class="QLabel" name="label_code_product">
                   <property name="text">
                    <string>Code</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLineEdit" name="lineEdit_14">
+                 <widget class="QLineEdit" name="value_code_product">
                   <property name="placeholderText">
                    <string/>
                   </property>
@@ -1656,16 +1649,16 @@
                </layout>
               </item>
               <item row="2" column="0">
-               <layout class="QHBoxLayout" name="horizontalLayout_28">
+               <layout class="QHBoxLayout" name="container_generic_product">
                 <item>
-                 <widget class="QLabel" name="label_40">
+                 <widget class="QLabel" name="label_generic_product">
                   <property name="text">
                    <string>Generic</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLineEdit" name="lineEdit_8">
+                 <widget class="QLineEdit" name="value_generic_product">
                   <property name="placeholderText">
                    <string/>
                   </property>
@@ -1674,16 +1667,16 @@
                </layout>
               </item>
               <item row="3" column="0">
-               <layout class="QHBoxLayout" name="horizontalLayout_29">
+               <layout class="QHBoxLayout" name="container_size_product">
                 <item>
-                 <widget class="QLabel" name="label_41">
+                 <widget class="QLabel" name="label_size_product">
                   <property name="text">
                    <string>Size</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLineEdit" name="lineEdit_9">
+                 <widget class="QLineEdit" name="value_size_product">
                   <property name="placeholderText">
                    <string/>
                   </property>
@@ -1695,7 +1688,7 @@
             </widget>
            </item>
            <item row="0" column="1">
-            <widget class="QFrame" name="frame_11">
+            <widget class="QFrame" name="product_middle_frame">
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
              </property>
@@ -1704,16 +1697,16 @@
              </property>
              <layout class="QGridLayout" name="gridLayout_10">
               <item row="0" column="0">
-               <layout class="QHBoxLayout" name="horizontalLayout_35">
+               <layout class="QHBoxLayout" name="container_price_product">
                 <item>
-                 <widget class="QLabel" name="label_47">
+                 <widget class="QLabel" name="label_price_product">
                   <property name="text">
                    <string>Price</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLineEdit" name="lineEdit_15">
+                 <widget class="QLineEdit" name="value_price_product">
                   <property name="placeholderText">
                    <string/>
                   </property>
@@ -1722,16 +1715,16 @@
                </layout>
               </item>
               <item row="1" column="0">
-               <layout class="QHBoxLayout" name="horizontalLayout_31">
+               <layout class="QHBoxLayout" name="container_cost_product">
                 <item>
-                 <widget class="QLabel" name="label_43">
+                 <widget class="QLabel" name="label_cost_product">
                   <property name="text">
                    <string>Cost</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLineEdit" name="lineEdit_13">
+                 <widget class="QLineEdit" name="value_cost_product">
                   <property name="placeholderText">
                    <string/>
                   </property>
@@ -1740,16 +1733,16 @@
                </layout>
               </item>
               <item row="2" column="0">
-               <layout class="QHBoxLayout" name="horizontalLayout_30">
+               <layout class="QHBoxLayout" name="container_class_product">
                 <item>
-                 <widget class="QLabel" name="label_42">
+                 <widget class="QLabel" name="label_class_product">
                   <property name="text">
                    <string>Class</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLineEdit" name="lineEdit_10">
+                 <widget class="QLineEdit" name="value_class_product">
                   <property name="placeholderText">
                    <string/>
                   </property>
@@ -1758,23 +1751,16 @@
                </layout>
               </item>
               <item row="3" column="0">
-               <layout class="QHBoxLayout" name="horizontalLayout_33">
+               <layout class="QHBoxLayout" name="container_type_product">
                 <item>
-                 <widget class="Line" name="line_6">
-                  <property name="orientation">
-                   <enum>Qt::Horizontal</enum>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="label_45">
+                 <widget class="QLabel" name="label_type_product">
                   <property name="text">
                    <string>Type</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLineEdit" name="lineEdit_12">
+                 <widget class="QLineEdit" name="value_type_product">
                   <property name="placeholderText">
                    <string/>
                   </property>
@@ -1786,7 +1772,7 @@
             </widget>
            </item>
            <item row="0" column="2">
-            <widget class="QFrame" name="frame_13">
+            <widget class="QFrame" name="product_right_frame">
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
              </property>
@@ -1795,7 +1781,7 @@
              </property>
              <layout class="QGridLayout" name="gridLayout_11">
               <item row="0" column="0">
-               <spacer name="verticalSpacer_3">
+               <spacer name="product_import_spacer">
                 <property name="orientation">
                  <enum>Qt::Vertical</enum>
                 </property>
@@ -1808,14 +1794,14 @@
                </spacer>
               </item>
               <item row="1" column="0">
-               <widget class="QPushButton" name="pushButton_4">
+               <widget class="QPushButton" name="button_import_product">
                 <property name="text">
                  <string>Import</string>
                 </property>
                </widget>
               </item>
               <item row="2" column="0">
-               <spacer name="verticalSpacer">
+               <spacer name="product_import_export_spacer">
                 <property name="orientation">
                  <enum>Qt::Vertical</enum>
                 </property>
@@ -1828,14 +1814,14 @@
                </spacer>
               </item>
               <item row="3" column="0">
-               <widget class="QPushButton" name="pushButton_7">
+               <widget class="QPushButton" name="button_export_product">
                 <property name="text">
                  <string>Export</string>
                 </property>
                </widget>
               </item>
               <item row="4" column="0">
-               <spacer name="verticalSpacer_2">
+               <spacer name="product_export_spacer">
                 <property name="orientation">
                  <enum>Qt::Vertical</enum>
                 </property>
@@ -1851,7 +1837,7 @@
             </widget>
            </item>
            <item row="1" column="0" colspan="3">
-            <widget class="QFrame" name="frame_12">
+            <widget class="QFrame" name="product_bottom_frame">
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
              </property>
@@ -1860,7 +1846,7 @@
              </property>
              <layout class="QGridLayout" name="gridLayout_14">
               <item row="0" column="0" colspan="3">
-               <widget class="QTableWidget" name="tableWidget_2">
+               <widget class="QTableWidget" name="table_product">
                 <property name="editTriggers">
                  <set>QAbstractItemView::NoEditTriggers</set>
                 </property>
@@ -1977,14 +1963,14 @@
                </widget>
               </item>
               <item row="1" column="0">
-               <widget class="QPushButton" name="pushButton_5">
+               <widget class="QPushButton" name="button_edit_product">
                 <property name="text">
                  <string>Edit</string>
                 </property>
                </widget>
               </item>
               <item row="1" column="1">
-               <spacer name="horizontalSpacer_2">
+               <spacer name="product_bottom_spacer">
                 <property name="orientation">
                  <enum>Qt::Horizontal</enum>
                 </property>
@@ -1997,7 +1983,7 @@
                </spacer>
               </item>
               <item row="1" column="2">
-               <widget class="QPushButton" name="pushButton_6">
+               <widget class="QPushButton" name="button_save_product">
                 <property name="text">
                  <string>Save Product</string>
                 </property>
@@ -2011,13 +1997,13 @@
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="tab_3">
+      <widget class="QWidget" name="history_tab">
        <attribute name="title">
         <string>History</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_15">
         <item row="0" column="0">
-         <widget class="QFrame" name="frame_8">
+         <widget class="QFrame" name="history_frame">
           <property name="frameShape">
            <enum>QFrame::StyledPanel</enum>
           </property>
@@ -2026,7 +2012,7 @@
           </property>
           <layout class="QGridLayout" name="gridLayout_13">
            <item row="0" column="0" colspan="3">
-            <widget class="QTableWidget" name="tableWidget_3">
+            <widget class="QTableWidget" name="history_table">
              <property name="editTriggers">
               <set>QAbstractItemView::NoEditTriggers</set>
              </property>
@@ -2188,14 +2174,14 @@
             </widget>
            </item>
            <item row="1" column="0">
-            <widget class="QPushButton" name="pushButton_8">
+            <widget class="QPushButton" name="button_import_history">
              <property name="text">
               <string>Import</string>
              </property>
             </widget>
            </item>
            <item row="1" column="1">
-            <spacer name="horizontalSpacer_3">
+            <spacer name="history_spacer">
              <property name="orientation">
               <enum>Qt::Horizontal</enum>
              </property>
@@ -2208,7 +2194,7 @@
             </spacer>
            </item>
            <item row="1" column="2">
-            <widget class="QPushButton" name="pushButton_9">
+            <widget class="QPushButton" name="button_export_history">
              <property name="text">
               <string>Export</string>
              </property>
