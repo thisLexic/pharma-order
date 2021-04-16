@@ -1612,43 +1612,7 @@
               <enum>QFrame::Raised</enum>
              </property>
              <layout class="QGridLayout" name="gridLayout_9">
-              <item row="0" column="0">
-               <layout class="QHBoxLayout" name="container_brand_product">
-                <item>
-                 <widget class="QLabel" name="label_brand_product">
-                  <property name="text">
-                   <string>Brand</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLineEdit" name="value_brand_product">
-                  <property name="placeholderText">
-                   <string/>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item row="1" column="0">
-               <layout class="QHBoxLayout" name="container_code_product">
-                <item>
-                 <widget class="QLabel" name="label_code_product">
-                  <property name="text">
-                   <string>Code</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLineEdit" name="value_code_product">
-                  <property name="placeholderText">
-                   <string/>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item row="2" column="0">
+              <item row="3" column="0">
                <layout class="QHBoxLayout" name="container_generic_product">
                 <item>
                  <widget class="QLabel" name="label_generic_product">
@@ -1666,7 +1630,25 @@
                 </item>
                </layout>
               </item>
-              <item row="3" column="0">
+              <item row="1" column="0">
+               <layout class="QHBoxLayout" name="container_brand_product">
+                <item>
+                 <widget class="QLabel" name="label_brand_product">
+                  <property name="text">
+                   <string>Brand</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="value_brand_product">
+                  <property name="placeholderText">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="4" column="0">
                <layout class="QHBoxLayout" name="container_size_product">
                 <item>
                  <widget class="QLabel" name="label_size_product">
@@ -1677,6 +1659,24 @@
                 </item>
                 <item>
                  <widget class="QLineEdit" name="value_size_product">
+                  <property name="placeholderText">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="0">
+               <layout class="QHBoxLayout" name="container_code_product">
+                <item>
+                 <widget class="QLabel" name="label_code_product">
+                  <property name="text">
+                   <string>Code</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="value_code_product">
                   <property name="placeholderText">
                    <string/>
                   </property>
@@ -1769,16 +1769,16 @@
                </layout>
               </item>
               <item row="4" column="0">
-               <layout class="QHBoxLayout" name="container_active_product_2">
+               <layout class="QHBoxLayout" name="container_is_active_product">
                 <item>
-                 <widget class="QLabel" name="label_active_product_2">
+                 <widget class="QLabel" name="label_is_active_product">
                   <property name="text">
                    <string>Active?</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLineEdit" name="value_active_product_2">
+                 <widget class="QLineEdit" name="value_is_active_product">
                   <property name="placeholderText">
                    <string/>
                   </property>
