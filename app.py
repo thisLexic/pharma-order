@@ -1,7 +1,7 @@
 import sys
 from PyQt5.QtWidgets import *
 from PyQt5.QtSql import *
-from ui.design import *
+from ui.main_design import *
 
 
 class DlgMain(QMainWindow, Ui_MainWindow):
@@ -79,19 +79,7 @@ class DlgMain(QMainWindow, Ui_MainWindow):
             QMessageBox.information(self, "Successfully added", "Product was added successfully")
         else:
             QMessageBox.warning(self, "Database Error", query.lastError().text())
-        self.clearProductForm()
         self.populateUiTableProduct()
-
-    def clearProductForm(self):
-        self.value_code_product.clear()
-        self.value_brand_product.clear()
-        self.value_generic_product.clear()
-        self.value_size_product.clear()
-        self.value_class_product.clear()
-        self.value_type_product.clear()
-        self.value_price_product.clear()
-        self.value_cost_product.clear()
-        self.value_is_active_product.clear()
 
     def validate_product_data(self):
         print("Data being validated for product")
