@@ -30,6 +30,7 @@ class DlgMain(QMainWindow, Ui_MainWindow):
                 type TEXT NOT NULL,
                 price REAL NOT NULL,
                 cost REAL NOT NULL,
+                is_active INTEGER NOT NULL,
                 ave_per_month REAL,
                 high INTEGER,
                 low INTEGER
@@ -37,7 +38,7 @@ class DlgMain(QMainWindow, Ui_MainWindow):
         """ 
         query = QSqlQuery()  
         query.exec(sql)
-        query.exec("insert into product values(1, '11', 'Amoxyl', 'Amoxycilin', '25mg', 'cardio', 'tablet', 2.43, 1.34, 4.6, 7, 3)")
+        query.exec("insert into product values(1, '11', 'Amoxyl', 'Amoxycilin', '25mg', 'cardio', 'tablet', 2.43, 1.34, 1, 4.6, 7, 3)")
 
 
     def populateUiTableProduct(self):
@@ -48,7 +49,7 @@ class DlgMain(QMainWindow, Ui_MainWindow):
             while query.next():
                 row = self.table_product.rowCount()
                 self.table_product.insertRow(row)
-                for col in range(1, 12):
+                for col in range(1, 13):
                     twi = QTableWidgetItem(str(query.value(col)))
                     self.table_product.setItem(row, col-1, twi)
         else:

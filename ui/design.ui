@@ -1930,6 +1930,11 @@
                 </column>
                 <column>
                  <property name="text">
+                  <string>Active?</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
                   <string>Ave/Month</string>
                  </property>
                 </column>
