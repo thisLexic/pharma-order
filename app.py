@@ -38,9 +38,10 @@ class DlgMain(QMainWindow, Ui_MainWindow):
         query = QSqlQuery()  
         query.exec(sql)
         query.exec("insert into product values(1, '11', 'Amoxyl', 'Amoxycilin', '25mg', 'cardio', 'tablet', 2.43, 1.34, 4.6, 7, 3)")
-        query.exec("insert into product values(2, '20', 'Right Med', 'Amlodipin, '100mg', 'cardio', 'capsule', 64.30, 38.34, 104, 203, 58)")
+
 
     def populateUiTableProduct(self):
+        self.table_product.clearContents()
         query = QSqlQuery()
         bOk = query.exec("SELECT * FROM product ORDER BY brand, generic")
         if bOk:
